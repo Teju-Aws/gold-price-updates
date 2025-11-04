@@ -9,8 +9,8 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 RUN unzip awscliv2.zip
 RUN ./aws/install
 ENV GOLD_API_ACCESS_TOKEN=""
-COPY config /root/.aws/
-COPY credentials /root/.aws/
+COPY .aws/config /root/.aws/
+COPY .aws/credentials /root/.aws/
 
 COPY gold-market-price.py .
 CMD ["python3","gold-market-price.py"]
