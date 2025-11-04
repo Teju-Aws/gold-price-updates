@@ -17,11 +17,11 @@ spec:
         spec:
           containers:
             - name: test
-              image: 8072388539/goldmetal:v2.0
+              image: 288434312749.dkr.ecr.ap-south-1.amazonaws.com/sns
 #              image: busybox
 #              command: [ "sh", "-c", "sleep 10" ]
               env:
                 - name: GOLD_API_ACCESS_TOKEN
-                  value: goldapi-1itcq1smhkbo2lu-io
+                  value: goldapi-1itcq1smhkj6iyn-io
           restartPolicy: OnFailure
       backoffLimit: 3
